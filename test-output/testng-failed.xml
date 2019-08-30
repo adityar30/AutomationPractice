@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test Suite for AutomationPractice]">
+  <listeners>
+    <listener class-name="com.automationpractice.qa.extentreport.ExtentReporter"/>
+  </listeners>
+  <test name="AutomationPractice Test Cases(failed)">
+    <classes>
+      <class name="com.automationpractice.qa.testcases.Testcases">
+        <methods>
+          <include name="tearDown"/>
+          <include name="AutomationPractice_TC05"/>
+          <include name="AutomationPractice_TC01"/>
+        </methods>
+      </class> <!-- com.automationpractice.qa.testcases.Testcases -->
+    </classes>
+  </test> <!-- AutomationPractice Test Cases(failed) -->
+</suite> <!-- Failed suite [Test Suite for AutomationPractice] -->

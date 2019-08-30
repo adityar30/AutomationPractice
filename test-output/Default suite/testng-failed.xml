@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.automationpractice.qa.testcases.Testcases">
+        <methods>
+          <include name="AutomationPractice_TC04"/>
+          <include name="tearDown"/>
+          <include name="AutomationPractice_TC05"/>
+          <include name="AutomationPractice_TC03"/>
+          <include name="AutomationPractice_TC01" invocation-numbers="0"/>
+          <include name="AutomationPractice_TC02"/>
+        </methods>
+      </class> <!-- com.automationpractice.qa.testcases.Testcases -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

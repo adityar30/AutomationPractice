@@ -1,0 +1,16 @@
+2019-08-30 02:57:33,463  INFO [main] TestUtil:42 - Loading Properties file
+2019-08-30 02:57:34,149  INFO [main] Testcases:52 - ***Executing Test Cases***
+2019-08-30 02:57:34,150  INFO [main] TestBase:57 - Validating URL
+2019-08-30 02:57:35,924  INFO [main] TestBase:86 - Valid URL
+2019-08-30 02:57:39,041  INFO [main] TestBase:62 - Loading Browser
+2019-08-30 02:58:23,559  INFO [main] Testcases:117 - ***Test Case execution has ended***
+2019-08-30 02:58:23,771 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-08-30 02:58:23,773 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-08-30 02:58:23,775 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-08-30 02:58:23,776 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-08-30 02:58:23,777 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Admin/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-08-30 02:58:24,081 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-08-30 02:58:24,082 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-08-30 02:58:24,082 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-08-30 02:58:24,083 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-08-30 02:58:24,083 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Admin/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
