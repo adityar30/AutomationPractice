@@ -31,7 +31,7 @@ public class TestUtil extends TestBase{
 	public static void takeScreenshot() throws IOException {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String currentDir = System.getProperty("user.dir");
-		FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + "Success_" + System.currentTimeMillis() + ".png"));
+		FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + "Success Screenshot_" + System.currentTimeMillis() + ".png"));
 	}
 	
 	public static Object[][] getTestData(String sheetName){
@@ -53,10 +53,11 @@ public class TestUtil extends TestBase{
 			e.printStackTrace();
 		} catch (IOException e) {
 		
+			log.error("Unable to load Excel file");
 			e.printStackTrace();
 		}
 		sheet=workbook.getSheet(sheetName);
-		System.out.println("Data in Excel:");
+		log.info("Data in Excel:");
 		Object[][] data= new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
 		for (int i = 0; i < sheet.getLastRowNum(); i++) 
 		{

@@ -11,12 +11,12 @@ import com.automationpractice.qa.base.TestBase;
 
 public class HomePage extends TestBase {
 	
+	static Logger log = Logger.getLogger(HomePage.class);
 	
 	@FindBy(linkText="Sign in")
 	WebElement LoginBtn;
 	
-
-	
+		
 	
 	public HomePage() {
 		PageFactory.initElements(driver, this);
@@ -25,12 +25,12 @@ public class HomePage extends TestBase {
 	public void HomePageLoginBtnClick() {
 		try {
 			
-			String title=driver.getTitle();
-			System.out.println("Page title is: "+title);
+			log.info("Clicking on Login link");
 			LoginBtn.click();
 			}
 		catch(Throwable e)
 		{
+			log.info("Unable to click on Login link");
 			e.printStackTrace();
 		}
 	}

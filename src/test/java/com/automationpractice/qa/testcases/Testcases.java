@@ -1,5 +1,10 @@
 package com.automationpractice.qa.testcases;
+import java.util.Date;
+
 import org.apache.log4j.Logger;
+import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.logging.LogType;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
@@ -50,6 +55,7 @@ public class Testcases extends TestBase{
 	public void AutomationPractice_TC01 (String name, String lname,String days, String month, String year, String comp, 
 			String address, String city, String state, String zipcode, String phone, String mobile, String alias)  {
 		log.info("***Executing Test Cases***");
+		log.info("Executing Test Case - AutomationPractice_TC01");
 		initialization();
 		home=new HomePage();
 		home.HomePageLoginBtnClick();
@@ -61,21 +67,22 @@ public class Testcases extends TestBase{
 		user=new UserAccountPage();
 		user.Logout();
 		accountlogin.LoginAfterRegistration();
-		
+		log.info("AutomationPractice_TC01 executed successfully");
 		}
 	
 	@Test(priority=2, dependsOnMethods= {"AutomationPractice_TC01"})
 	public void AutomationPractice_TC02() {
 		
+		log.info("Executing Test Case - AutomationPractice_TC02");
 		user.SearchItem();
 		search=new SearchPage();
 		search.VerifySearchCountAndResult();
-		
+		log.info("AutomationPractice_TC02 executed successfully");
 	}
 	
 	@Test(priority=3, dependsOnMethods= {"AutomationPractice_TC02"})
 	public void AutomationPractice_TC03() {
-		
+		log.info("Executing Test Case - AutomationPractice_TC03");
 		search.MoreResultView();
 		searchresult=new SearchResultPage();
 		searchresult.AddingItem();
@@ -92,29 +99,32 @@ public class Testcases extends TestBase{
 		ordersummary.ConfirmingOrder();
 		orderconfirmation=new OrderConfirmationPage();
 		orderconfirmation.BackToOrders();
-		
+		log.info("AutomationPractice_TC03 executed successfully");
 	}
 	
 	@Test(priority=4, dependsOnMethods= {"AutomationPractice_TC03"})
 	public void AutomationPractice_TC04() {
-		
+		log.info("Executing Test Case - AutomationPractice_TC04");
 		orderhistory=new OrderHistoryPage();
 		orderhistory.Download();
 		orderhistory.VerifyDownload();
 		orderhistory.OrderHistoryLogout();
+		log.info("AutomationPractice_TC04 executed successfully");
 	}
 	
 	@Test(priority=5, dependsOnMethods= {"AutomationPractice_TC01"})
 	public void AutomationPractice_TC05() {
+		log.info("Executing Test Case - AutomationPractice_TC05");
 		accountlogin.LoginFail();
+		log.info("AutomationPractice_TC05 executed successfully");
 		}
-	
 	
 	@AfterSuite
 	public void tearDown() {
 		
+		log.info("Closing the Browser");
 		driver.close();
-		log.info("***Test Case execution has ended***");
+		log.info("***Test Case execution completed***");
 		
 	}
 }

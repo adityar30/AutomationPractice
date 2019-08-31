@@ -1,6 +1,7 @@
 package com.automationpractice.qa.util;
 
 import java.io.IOException;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
@@ -80,13 +81,10 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 
 	public void onTestFailure(ITestResult arg0) {
 		
-		System.out.println("TestCase Failed");
+		log.fatal("TestCase Failed");
+		log.info("Capturing Failure Screenshot");
 		FailScenario();
-	/*	LogEntries logEntries =driver.manage().logs().get(LogType.BROWSER);
-		for (LogEntry entry : logEntries) {
-			  System.out.println(entry.getLevel() + " " + entry.getMessage());
-			 }*/
-		
+        		
 	}
 	public void afterAlertAccept(WebDriver arg0) {
 		// TODO Auto-generated method stub
