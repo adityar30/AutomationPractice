@@ -36,6 +36,7 @@ public class OrderHistoryPage extends TestBase{
 		log.info("Page Title: "+driver.getTitle());
 		log.info("Clicking on Invoice link");
 		InvoicePDFLink.click();
+		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
 		log.info("Getting List of Tabs");
 		ArrayList<String> tab= new ArrayList<String> (driver.getWindowHandles());
 		log.info("Switching to Child Tab");

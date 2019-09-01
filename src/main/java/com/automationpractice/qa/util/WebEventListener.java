@@ -84,6 +84,8 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 		log.fatal("TestCase Failed");
 		log.info("Capturing Failure Screenshot");
 		FailScenario();
+		log.info("Extracting browser logs");
+		extractChromelogs();
         		
 	}
 	public void afterAlertAccept(WebDriver arg0) {

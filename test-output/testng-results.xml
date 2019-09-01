@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Test Suite for AutomationPractice" duration-ms="51417" started-at="2019-08-31T20:44:19Z" finished-at="2019-08-31T20:45:10Z">
+  <suite name="Test Suite for AutomationPractice" duration-ms="58232" started-at="2019-09-01T09:17:37Z" finished-at="2019-09-01T09:18:36Z">
     <groups>
     </groups>
-    <test name="AutomationPractice Test Cases" duration-ms="51417" started-at="2019-08-31T20:44:19Z" finished-at="2019-08-31T20:45:10Z">
+    <test name="AutomationPractice Test Cases" duration-ms="58232" started-at="2019-09-01T09:17:37Z" finished-at="2019-09-01T09:18:36Z">
       <class name="com.automationpractice.qa.testcases.Testcases">
-        <test-method status="PASS" signature="AutomationPractice_TC01(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.automationpractice.qa.testcases.Testcases@6536e911]" name="AutomationPractice_TC01" duration-ms="27394" started-at="2019-09-01T02:14:20Z" data-provider="getCRMTestData" finished-at="2019-09-01T02:14:47Z">
+        <test-method status="PASS" signature="AutomationPractice_TC01(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.automationpractice.qa.testcases.Testcases@6536e911]" name="AutomationPractice_TC01" duration-ms="30154" started-at="2019-09-01T14:47:38Z" data-provider="getCRMTestData" finished-at="2019-09-01T14:48:08Z">
           <params>
             <param index="0">
               <value>
@@ -78,19 +78,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AutomationPractice_TC01 -->
-        <test-method status="PASS" signature="AutomationPractice_TC02()[pri:2, instance:com.automationpractice.qa.testcases.Testcases@6536e911]" name="AutomationPractice_TC02" duration-ms="2416" started-at="2019-09-01T02:14:47Z" depends-on-methods="com.automationpractice.qa.testcases.Testcases.AutomationPractice_TC01" finished-at="2019-09-01T02:14:50Z">
+        <test-method status="PASS" signature="AutomationPractice_TC02()[pri:2, instance:com.automationpractice.qa.testcases.Testcases@6536e911]" name="AutomationPractice_TC02" duration-ms="2556" started-at="2019-09-01T14:48:08Z" depends-on-methods="com.automationpractice.qa.testcases.Testcases.AutomationPractice_TC01" finished-at="2019-09-01T14:48:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AutomationPractice_TC02 -->
-        <test-method status="PASS" signature="AutomationPractice_TC03()[pri:3, instance:com.automationpractice.qa.testcases.Testcases@6536e911]" name="AutomationPractice_TC03" duration-ms="15966" started-at="2019-09-01T02:14:50Z" depends-on-methods="com.automationpractice.qa.testcases.Testcases.AutomationPractice_TC02" finished-at="2019-09-01T02:15:05Z">
+        <test-method status="PASS" signature="AutomationPractice_TC03()[pri:3, instance:com.automationpractice.qa.testcases.Testcases@6536e911]" name="AutomationPractice_TC03" duration-ms="19401" started-at="2019-09-01T14:48:11Z" depends-on-methods="com.automationpractice.qa.testcases.Testcases.AutomationPractice_TC02" finished-at="2019-09-01T14:48:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AutomationPractice_TC03 -->
-        <test-method status="PASS" signature="AutomationPractice_TC04()[pri:4, instance:com.automationpractice.qa.testcases.Testcases@6536e911]" name="AutomationPractice_TC04" duration-ms="3560" started-at="2019-09-01T02:15:06Z" depends-on-methods="com.automationpractice.qa.testcases.Testcases.AutomationPractice_TC03" finished-at="2019-09-01T02:15:09Z">
+        <test-method status="PASS" signature="AutomationPractice_TC04()[pri:4, instance:com.automationpractice.qa.testcases.Testcases@6536e911]" name="AutomationPractice_TC04" duration-ms="3842" started-at="2019-09-01T14:48:30Z" depends-on-methods="com.automationpractice.qa.testcases.Testcases.AutomationPractice_TC03" finished-at="2019-09-01T14:48:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AutomationPractice_TC04 -->
-        <test-method status="FAIL" signature="AutomationPractice_TC05()[pri:5, instance:com.automationpractice.qa.testcases.Testcases@6536e911]" name="AutomationPractice_TC05" duration-ms="987" started-at="2019-09-01T02:15:09Z" depends-on-methods="com.automationpractice.qa.testcases.Testcases.AutomationPractice_TC01" finished-at="2019-09-01T02:15:10Z">
+        <test-method status="FAIL" signature="AutomationPractice_TC05()[pri:5, instance:com.automationpractice.qa.testcases.Testcases@6536e911]" name="AutomationPractice_TC05" duration-ms="1126" started-at="2019-09-01T14:48:34Z" depends-on-methods="com.automationpractice.qa.testcases.Testcases.AutomationPractice_TC01" finished-at="2019-09-01T14:48:35Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -133,7 +133,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AutomationPractice_TC05 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automationpractice.qa.testcases.Testcases@6536e911]" name="tearDown" is-config="true" duration-ms="285" started-at="2019-09-01T02:15:10Z" finished-at="2019-09-01T02:15:11Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automationpractice.qa.testcases.Testcases@6536e911]" name="tearDown" is-config="true" duration-ms="182" started-at="2019-09-01T14:48:36Z" finished-at="2019-09-01T14:48:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

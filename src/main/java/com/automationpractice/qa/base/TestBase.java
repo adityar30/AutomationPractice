@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Properties;
 import java.util.Scanner;
@@ -18,6 +19,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.remote.CapabilityType;
@@ -84,12 +87,23 @@ public class TestBase {
 		       cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 		       cap.setCapability(ChromeOptions.CAPABILITY, options);   
 		       
+		       LoggingPreferences logPrefs = new LoggingPreferences();
+		       logPrefs.enable(LogType.PERFORMANCE, Level.INFO);
+		       logPrefs.enable(LogType.PROFILER, Level.INFO);
+		       logPrefs.enable(LogType.BROWSER, Level.INFO);
+		       logPrefs.enable(LogType.CLIENT, Level.INFO);
+		       logPrefs.enable(LogType.DRIVER, Level.INFO);
+		       logPrefs.enable(LogType.SERVER, Level.INFO);
+		       cap.setCapability(CapabilityType.LOGGING_PREFS, logPrefs);
+
+     
 			System.setProperty("webdriver.chrome.driver", "Drivers\\chromedriver.exe");
 			driver = new ChromeDriver(cap);
 			log.info("Loading Browser");
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
 			driver.get(UserUrl);
+			
 			log.info("Application launched successfully..!!");
 			log.info(driver.getCurrentUrl());
 			driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
@@ -135,6 +149,17 @@ public class TestBase {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+	}
+	
+	public void extractChromelogs() {
+		
+		LogEntries logentries=driver.manage().logs().get(LogType.BROWSER);
+		for(LogEntry entry: logentries) {
+			
+			log.info(new Date(entry.getTimestamp() + " " + entry.getLevel() + " " + entry.getMessage()));
+		}
+		
 		
 	}
 }
