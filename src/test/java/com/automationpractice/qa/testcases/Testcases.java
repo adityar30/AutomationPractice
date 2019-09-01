@@ -1,15 +1,11 @@
 package com.automationpractice.qa.testcases;
-import java.util.Date;
+
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.logging.LogEntries;
-import org.openqa.selenium.logging.LogEntry;
-import org.openqa.selenium.logging.LogType;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
 import com.automationpractice.qa.base.TestBase;
 import com.automationpractice.qa.pages.AccountLoginPage;
 import com.automationpractice.qa.pages.AccountRegistrationPage;
@@ -54,6 +50,7 @@ public class Testcases extends TestBase{
 	@Test(priority=1, dataProvider="getCRMTestData")
 	public void AutomationPractice_TC01 (String name, String lname,String days, String month, String year, String comp, 
 			String address, String city, String state, String zipcode, String phone, String mobile, String alias)  {
+		
 		log.info("***Executing Test Cases***");
 		log.info("Executing Test Case - AutomationPractice_TC01");
 		initialization();

@@ -1,5 +1,6 @@
 package com.automationpractice.qa.base;
 
+import java.beans.EventHandler;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -25,14 +26,8 @@ import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.Assert;
-import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
-
-
-
 
 public class TestBase {
 
@@ -40,11 +35,9 @@ public class TestBase {
 	public static WebDriver driver;
 	static String UserUrl;
 	static Logger log = Logger.getLogger(TestBase.class);
-	
+	public static EventFiringWebDriver eventdriver;
+	public static EventHandler handler;
 	String downloadPath=System.getProperty("user.dir")+"\\Download";
-	
-//	public static WebDriverWait wait = new WebDriverWait(driver,10);
-
 	
 	public TestBase() {
 		try {
@@ -73,45 +66,46 @@ public class TestBase {
 			log.info("Validating URL");
 			ValidateURL();
 			log.info("Setting Preferences for Chrome");
-			 HashMap<String, Object> chromePrefs = new HashMap <String, Object>();
-		       chromePrefs.put("profile.default_content_settings.popups", 0);
-		       chromePrefs.put("download.default_directory", downloadPath);
-		       ChromeOptions options = new ChromeOptions();
-		       HashMap<String, Object> chromeOptionsMap = new HashMap<String, Object>();
-		       options.setExperimentalOption("prefs", chromePrefs);
-		       options.addArguments("--test-type");
+			HashMap<String, Object> chromePrefs = new HashMap <String, Object>();
+		    chromePrefs.put("profile.default_content_settings.popups", 0);
+		    chromePrefs.put("download.default_directory", downloadPath);
+		    ChromeOptions options = new ChromeOptions();
+		   	HashMap<String, Object> chromeOptionsMap = new HashMap<String, Object>();
+		   	options.setExperimentalOption("prefs", chromePrefs);
+		   	options.addArguments("--test-type");
 		       
 		  
-		       DesiredCapabilities cap = DesiredCapabilities.chrome();
-		       cap.setCapability(ChromeOptions.CAPABILITY, chromeOptionsMap);
-		       cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-		       cap.setCapability(ChromeOptions.CAPABILITY, options);   
+		     DesiredCapabilities cap = DesiredCapabilities.chrome();
+		     cap.setCapability(ChromeOptions.CAPABILITY, chromeOptionsMap);
+		     cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+		     cap.setCapability(ChromeOptions.CAPABILITY, options);   
 		       
-		       LoggingPreferences logPrefs = new LoggingPreferences();
-		       logPrefs.enable(LogType.PERFORMANCE, Level.INFO);
-		       logPrefs.enable(LogType.PROFILER, Level.INFO);
-		       logPrefs.enable(LogType.BROWSER, Level.INFO);
-		       logPrefs.enable(LogType.CLIENT, Level.INFO);
-		       logPrefs.enable(LogType.DRIVER, Level.INFO);
-		       logPrefs.enable(LogType.SERVER, Level.INFO);
-		       cap.setCapability(CapabilityType.LOGGING_PREFS, logPrefs);
+		     LoggingPreferences logPrefs = new LoggingPreferences();
+		     logPrefs.enable(LogType.PERFORMANCE, Level.INFO);
+		     logPrefs.enable(LogType.PROFILER, Level.INFO);
+		     logPrefs.enable(LogType.BROWSER, Level.INFO);
+		     logPrefs.enable(LogType.CLIENT, Level.INFO);
+		     logPrefs.enable(LogType.DRIVER, Level.INFO);
+		     logPrefs.enable(LogType.SERVER, Level.INFO);
+		     cap.setCapability(CapabilityType.LOGGING_PREFS, logPrefs);
 
      
 			System.setProperty("webdriver.chrome.driver", "Drivers\\chromedriver.exe");
 			driver = new ChromeDriver(cap);
-			log.info("Loading Browser");
+			log.info("Loading and maximizing Browser");
 			driver.manage().window().maximize();
+			log.info("Deleting Browser cookies");
 			driver.manage().deleteAllCookies();
 			driver.get(UserUrl);
-			
 			log.info("Application launched successfully..!!");
-			log.info(driver.getCurrentUrl());
+			log.info("Current Application URL is: "+driver.getCurrentUrl());
 			driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
 			} 
 		catch (Throwable ex) {
 			
-			System.out.println("Invalid URL");
-		}
+			log.error("Not able to launch Application");
+			ex.printStackTrace();
+			}
 	
 	}
 	
@@ -126,7 +120,7 @@ public class TestBase {
 		if( UserUrl!= null) {
 			new URL(UserUrl).toURI();
 			
-			log.info("Valid URL");
+			log.info("Entered URL is Valid");
 			bool=true;
 			
 		}
@@ -146,14 +140,15 @@ public class TestBase {
 		try {
 			FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + "Failure Screenshot_" +System.currentTimeMillis() + ".png"));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			
+			log.error("Not able to take error Screenshot");
 			e.printStackTrace();
 		}
 		
 	}
 	
 	public void extractChromelogs() {
-		
+		log.info("In Extracting Browser logs method");
 		LogEntries logentries=driver.manage().logs().get(LogType.BROWSER);
 		for(LogEntry entry: logentries) {
 			

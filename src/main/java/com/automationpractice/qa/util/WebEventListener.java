@@ -1,84 +1,21 @@
 package com.automationpractice.qa.util;
 
-import java.io.IOException;
-import java.util.Date;
-import java.util.concurrent.TimeUnit;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.logging.LogEntries;
-import org.openqa.selenium.logging.LogEntry;
-import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.support.events.WebDriverEventListener;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
 import com.automationpractice.qa.base.TestBase;
-
-
-
 
 public class WebEventListener extends TestBase implements WebDriverEventListener, ITestListener {
 	
 	Logger log = Logger.getLogger(WebEventListener.class);
 
-	public void beforeNavigateTo(String url, WebDriver driver) {
-		System.out.println("Before navigating to: '" + url + "'");
-	}
-
-	public void afterNavigateTo(String url, WebDriver driver) {
-		System.out.println("Navigated to:'" + url + "'");
-	}
-
-	public void beforeChangeValueOf(WebElement element, WebDriver driver) {
-		System.out.println("Value of the:" + element.toString() + " before any changes made");
-	}
-
-	public void afterChangeValueOf(WebElement element, WebDriver driver) {
-		System.out.println("Element value changed to: " + element.toString());
-	}
-
-	public void beforeClickOn(WebElement element, WebDriver driver) {
-		System.out.println("Trying to click on: " + element.toString());
-	}
-
-	public void afterClickOn(WebElement element, WebDriver driver) {
-		System.out.println("Clicked on: " + element.toString());
-	}
-
-	public void beforeNavigateBack(WebDriver driver) {
-		System.out.println("Navigating back to previous page");
-	}
-
-	public void afterNavigateBack(WebDriver driver) {
-		System.out.println("Navigated back to previous page");
-	}
-
-	public void beforeNavigateForward(WebDriver driver) {
-		System.out.println("Navigating forward to next page");
-	}
-
-	public void afterNavigateForward(WebDriver driver) {
-		System.out.println("Navigated forward to next page");
-	}
-
-	public void onException(Throwable error, WebDriver driver) {
-		System.out.println("Exception occured: " + error);
-		
-	}
-
-	public void beforeFindBy(By by, WebElement element, WebDriver driver) {
-		System.out.println("Trying to find Element By : " + by.toString());
-	}
-
-	public void afterFindBy(By by, WebElement element, WebDriver driver) {
-		System.out.println("Found Element By : " + by.toString());
-	}
-
+	
 	public void onTestFailure(ITestResult arg0) {
 		
 		log.fatal("TestCase Failed");
@@ -88,6 +25,8 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 		extractChromelogs();
         		
 	}
+	
+	//Un-implemented Over-ridden blocks
 	public void afterAlertAccept(WebDriver arg0) {
 		// TODO Auto-generated method stub
 		
@@ -196,6 +135,50 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	}
 
 	public void onTestSuccess(ITestResult arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void afterClickOn(WebElement arg0, WebDriver arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void afterFindBy(By arg0, WebElement arg1, WebDriver arg2) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void afterNavigateBack(WebDriver arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void afterNavigateForward(WebDriver arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void afterNavigateTo(String arg0, WebDriver arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void beforeClickOn(WebElement arg0, WebDriver arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void beforeFindBy(By arg0, WebElement arg1, WebDriver arg2) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void beforeNavigateBack(WebDriver arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void beforeNavigateForward(WebDriver arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void beforeNavigateTo(String arg0, WebDriver arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void onException(Throwable arg0, WebDriver arg1) {
 		// TODO Auto-generated method stub
 		
 	}

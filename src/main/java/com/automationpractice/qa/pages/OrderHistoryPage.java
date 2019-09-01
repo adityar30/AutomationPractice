@@ -2,15 +2,11 @@ package com.automationpractice.qa.pages;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import com.automationpractice.qa.base.TestBase;
 
 public class OrderHistoryPage extends TestBase{
