@@ -1,0 +1,125 @@
+2019-09-09 23:08:00,831  INFO [main] TestBase:44 - Loading Property File
+2019-09-09 23:08:00,876  INFO [main] TestBase:44 - Loading Property File
+2019-09-09 23:08:00,908  INFO [main] TestUtil:50 - Loading Excel file
+2019-09-09 23:08:00,909  INFO [main] TestUtil:59 - Loading Workbook
+2019-09-09 23:08:01,686  INFO [main] TestUtil:70 - Loading sheet from Workbook
+2019-09-09 23:08:01,687  INFO [main] TestUtil:72 - Data in Excel:
+2019-09-09 23:08:01,727  INFO [main] Testcases:54 - ***Executing Test Cases***
+2019-09-09 23:08:01,727  INFO [main] Testcases:55 - Executing Test Case - AutomationPractice_TC01
+2019-09-09 23:08:01,728  INFO [main] TestBase:66 - Validating URL
+2019-09-09 23:08:01,729  INFO [main] TestBase:125 - Entered URL is Valid
+2019-09-09 23:08:01,730  INFO [main] TestBase:68 - Setting Preferences for Chrome
+2019-09-09 23:08:20,286  INFO [main] TestBase:95 - Loading and maximizing Browser
+2019-09-09 23:08:22,136  INFO [main] TestBase:97 - Deleting Browser cookies
+2019-09-09 23:08:34,343  INFO [main] TestBase:100 - Application launched successfully..!!
+2019-09-09 23:08:34,358  INFO [main] TestBase:101 - Current Application URL is: http://automationpractice.com/index.php?
+2019-09-09 23:08:34,504  INFO [main] TestBase:44 - Loading Property File
+2019-09-09 23:08:34,560  INFO [main] HomePage:25 - Clicking on Login link
+2019-09-09 23:08:40,082  INFO [main] TestBase:44 - Loading Property File
+2019-09-09 23:08:40,089  INFO [main] AccountLoginPage:44 - Home Page - getting Email address from Property file
+2019-09-09 23:08:40,688  INFO [main] AccountLoginPage:46 - Clicking on Create Account link
+2019-09-09 23:08:41,745  INFO [main] TestBase:44 - Loading Property File
+2019-09-09 23:08:41,749  INFO [main] AccountRegistrationPage:88 - Getting and Entering Testdata from Excel file
+2019-09-09 23:08:41,755  INFO [main] AccountRegistrationPage:89 - Page Title: Login - My Store
+2019-09-09 23:08:41,756  INFO [main] AccountRegistrationPage:91 - Clicking on Title Radio button
+2019-09-09 23:08:43,932  INFO [main] AccountRegistrationPage:94 - Entering First Name and value is ABCD
+2019-09-09 23:08:44,497  INFO [main] AccountRegistrationPage:97 - Entering Last Name and value is CBDE
+2019-09-09 23:08:44,647  INFO [main] AccountRegistrationPage:100 - Entering Password from Property File and value is 123456
+2019-09-09 23:08:44,852  INFO [main] AccountRegistrationPage:103 - Entering Days in dropdown and value is 25
+2019-09-09 23:08:45,098  INFO [main] AccountRegistrationPage:106 - Entering Month in dropdown and value is October
+2019-09-09 23:08:45,281  INFO [main] AccountRegistrationPage:109 - Entering year in dropdown and value is 2000
+2019-09-09 23:08:45,379  INFO [main] AccountRegistrationPage:112 - Entering Company name and value is ABC Corp.
+2019-09-09 23:08:46,184  INFO [main] AccountRegistrationPage:115 - Entering Address and value is ABCD
+2019-09-09 23:08:46,304  INFO [main] AccountRegistrationPage:118 - Entering City name and value is Miami
+2019-09-09 23:08:46,426  INFO [main] AccountRegistrationPage:121 - Entering State name and value is Florida
+2019-09-09 23:08:46,558  INFO [main] AccountRegistrationPage:124 - Entering Zipcode and value is 33109
+2019-09-09 23:08:46,691  INFO [main] AccountRegistrationPage:127 - Entering Home Phone number and value is 1234
+2019-09-09 23:08:46,848  INFO [main] AccountRegistrationPage:130 - Entering Mobile number and value is 3456
+2019-09-09 23:08:46,967  INFO [main] AccountRegistrationPage:133 - Clearing Alias textbox
+2019-09-09 23:08:47,148  INFO [main] AccountRegistrationPage:136 - Enter Alias Address and value is Tampa, Florida
+2019-09-09 23:08:47,351  INFO [main] AccountRegistrationPage:139 - Clicking on Register button
+2019-09-09 23:08:50,051  INFO [main] TestBase:44 - Loading Property File
+2019-09-09 23:08:50,061  INFO [main] UserAccountPage:31 - Page Title:My account - My Store
+2019-09-09 23:08:50,066  INFO [main] UserAccountPage:33 - Clicking on Logout button
+2019-09-09 23:08:53,739  INFO [main] AccountLoginPage:58 - Page Title: Login - My Store
+2019-09-09 23:08:54,663  INFO [main] AccountLoginPage:60 - Loading Email from Property file
+2019-09-09 23:08:54,663  INFO [main] AccountLoginPage:61 - Value of Email from Property file 987654123295@gmail.com
+2019-09-09 23:08:54,778  INFO [main] AccountLoginPage:63 - Loading Password from Property file
+2019-09-09 23:08:54,778  INFO [main] AccountLoginPage:64 - Value of Email from Property file 123456
+2019-09-09 23:08:54,778  INFO [main] AccountLoginPage:65 - Taking screenshot after entering Email and Password
+2019-09-09 23:08:54,779  INFO [main] TestBase:44 - Loading Property File
+2019-09-09 23:08:54,779  INFO [main] TestUtil:33 - I Success Screenshot Method
+2019-09-09 23:08:56,008  INFO [main] AccountLoginPage:67 - Clicking on SignIn button
+2019-09-09 23:08:58,666  INFO [main] AccountLoginPage:69 - Taking screenshot after successful Sign-in
+2019-09-09 23:08:58,667  INFO [main] TestBase:44 - Loading Property File
+2019-09-09 23:08:58,669  INFO [main] TestUtil:33 - I Success Screenshot Method
+2019-09-09 23:08:59,055  INFO [main] Testcases:67 - AutomationPractice_TC01 executed successfully
+2019-09-09 23:08:59,060  INFO [main] Testcases:73 - Executing Test Case - AutomationPractice_TC02
+2019-09-09 23:08:59,060  INFO [main] UserAccountPage:44 - Getting Search string from Property
+2019-09-09 23:08:59,166  INFO [main] UserAccountPage:46 - Clicking on Search button
+2019-09-09 23:09:01,361  INFO [main] TestBase:44 - Loading Property File
+2019-09-09 23:09:02,125  INFO [main] SearchPage:33 - No of Results for entered Search 7
+2019-09-09 23:09:02,126  INFO [main] SearchPage:35 - Comparing Result with Search String
+2019-09-09 23:09:02,179 DEBUG [main] SearchPage:45 - Search String avaialble in Search Result: Printed Summer Dress
+2019-09-09 23:09:02,201 DEBUG [main] SearchPage:45 - Search String avaialble in Search Result: Printed Dress
+2019-09-09 23:09:02,223 DEBUG [main] SearchPage:45 - Search String avaialble in Search Result: Printed Summer Dress
+2019-09-09 23:09:02,245 DEBUG [main] SearchPage:45 - Search String avaialble in Search Result: Printed Chiffon Dress
+2019-09-09 23:09:02,270 DEBUG [main] SearchPage:45 - Search String avaialble in Search Result: Printed Dress
+2019-09-09 23:09:02,297 FATAL [main] SearchPage:50 - Search String not avaialble in Search Result:Faded Short Sleeve T-shirts
+2019-09-09 23:09:02,315 FATAL [main] SearchPage:50 - Search String not avaialble in Search Result:Blouse
+2019-09-09 23:09:02,316  INFO [main] Testcases:77 - AutomationPractice_TC02 executed successfully
+2019-09-09 23:09:02,318  INFO [main] Testcases:82 - Executing Test Case - AutomationPractice_TC03
+2019-09-09 23:09:02,323  INFO [main] SearchPage:68 - Clicking on Product
+2019-09-09 23:09:05,477  INFO [main] TestBase:44 - Loading Property File
+2019-09-09 23:09:05,486  INFO [main] SearchResultPage:31 - Page Title: Printed Summer Dress - My Store
+2019-09-09 23:09:05,486  INFO [main] SearchResultPage:32 - Getting the Parent windowhandle ID
+2019-09-09 23:09:05,491  INFO [main] SearchResultPage:34 - Parent Windowhandle ID: CDwindow-C209983821D14E5754A866D2363B7FFA
+2019-09-09 23:09:05,496  INFO [main] SearchResultPage:37 - Adding item to Cart
+2019-09-09 23:09:05,599  INFO [main] SearchResultPage:39 - Getting available Window Handles
+2019-09-09 23:09:05,603 DEBUG [main] SearchResultPage:43 - Switching to Child window
+2019-09-09 23:09:05,604 DEBUG [main] SearchResultPage:45 - Child Windowhandle ID: CDwindow-C209983821D14E5754A866D2363B7FFA
+2019-09-09 23:09:05,604 DEBUG [main] SearchResultPage:47 - Switching to Childwindow
+2019-09-09 23:09:05,652  INFO [main] SearchResultPage:49 - Clicking on Checkout button
+2019-09-09 23:09:08,913  INFO [main] TestBase:44 - Loading Property File
+2019-09-09 23:09:08,930  INFO [main] ShoppingCartPage:26 - Page Title: Order - My Store
+2019-09-09 23:09:08,930  INFO [main] ShoppingCartPage:27 - Taking Screenshot of Shopping Cart
+2019-09-09 23:09:08,930  INFO [main] TestBase:44 - Loading Property File
+2019-09-09 23:09:08,932  INFO [main] TestUtil:33 - I Success Screenshot Method
+2019-09-09 23:09:13,533  INFO [main] TestBase:44 - Loading Property File
+2019-09-09 23:09:13,591  INFO [main] ManageAddressPage:24 - Page Title: Order - My Store
+2019-09-09 23:09:13,592  INFO [main] ManageAddressPage:25 - Clicking on Proceed to Checkout
+2019-09-09 23:09:15,707  INFO [main] TestBase:44 - Loading Property File
+2019-09-09 23:09:15,714  INFO [main] ShippingPage:27 - Page Title: Order - My Store
+2019-09-09 23:09:15,715  INFO [main] ShippingPage:28 - Accepting Terms and Services
+2019-09-09 23:09:15,806  INFO [main] ShippingPage:39 - Clicking on Proceed to Checkout
+2019-09-09 23:09:17,438  INFO [main] TestBase:44 - Loading Property File
+2019-09-09 23:09:17,446  INFO [main] PaymentPage:28 - Page Title: Order - My Store
+2019-09-09 23:09:17,446  INFO [main] PaymentPage:29 - Clicking on Pay by Bank Wire option
+2019-09-09 23:09:18,725  INFO [main] TestBase:44 - Loading Property File
+2019-09-09 23:09:18,733  INFO [main] OrderSummaryPage:24 - Page Title: My Store
+2019-09-09 23:09:18,733  INFO [main] OrderSummaryPage:25 - Confirming Order
+2019-09-09 23:09:25,278  INFO [main] TestBase:44 - Loading Property File
+2019-09-09 23:09:25,280  INFO [main] OrderConfirmationPage:46 - Click on Back to Orders
+2019-09-09 23:09:27,804  INFO [main] Testcases:99 - AutomationPractice_TC03 executed successfully
+2019-09-09 23:09:27,805  INFO [main] Testcases:104 - Executing Test Case - AutomationPractice_TC04
+2019-09-09 23:09:27,814  INFO [main] TestBase:44 - Loading Property File
+2019-09-09 23:09:27,829  INFO [main] OrderHistoryPage:32 - Page Title: Order history - My Store
+2019-09-09 23:09:27,830  INFO [main] OrderHistoryPage:33 - Clicking on Invoice link
+2019-09-09 23:09:28,006  INFO [main] OrderHistoryPage:36 - Getting List of Tabs
+2019-09-09 23:09:28,010  INFO [main] OrderHistoryPage:38 - Switching to Child Tab
+2019-09-09 23:09:28,021  INFO [main] OrderHistoryPage:41 - Closing Child Tab
+2019-09-09 23:09:29,546  INFO [main] OrderHistoryPage:43 - Switching back to Parent Tab
+2019-09-09 23:09:29,562  INFO [main] OrderHistoryPage:60 - Invoice File Downloaded and available in Dowload Folder
+2019-09-09 23:09:29,565  INFO [main] OrderHistoryPage:77 - Logging out from the application
+2019-09-09 23:09:32,634  INFO [main] Testcases:109 - AutomationPractice_TC04 executed successfully
+2019-09-09 23:09:32,636  INFO [main] Testcases:114 - Executing Test Case - AutomationPractice_TC05
+2019-09-09 23:09:32,636  INFO [main] AccountLoginPage:81 - Entering Invalid Email address
+2019-09-09 23:09:32,739  INFO [main] AccountLoginPage:83 - Clicking on Create Account button
+2019-09-09 23:09:32,850  INFO [main] AccountLoginPage:86 - Assertion to fail the Testcase
+2019-09-09 23:09:33,786 FATAL [main] WebEventListener:21 - TestCase Failed
+2019-09-09 23:09:33,787  INFO [main] WebEventListener:22 - Capturing Failure Screenshot
+2019-09-09 23:09:33,787  INFO [main] TestBase:139 - Taking Failure Screenshot
+2019-09-09 23:09:34,115  INFO [main] WebEventListener:24 - Extracting browser logs
+2019-09-09 23:09:34,115  INFO [main] TestBase:153 - In Extracting Browser logs method
+2019-09-09 23:09:34,435  INFO [main] Testcases:122 - Closing the Browser
+2019-09-09 23:09:35,908  INFO [main] Testcases:124 - ***Test Case execution completed***

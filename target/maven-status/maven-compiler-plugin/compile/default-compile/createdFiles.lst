@@ -1,0 +1,17 @@
+com\automationpractice\qa\pages\SearchPage.class
+com\automationpractice\qa\pages\ManageAddressPage.class
+com\automationpractice\qa\pages\OrderSummaryPage.class
+com\automationpractice\qa\pages\SearchResultPage.class
+com\automationpractice\qa\pages\AccountLoginPage.class
+com\automationpractice\qa\pages\HomePage.class
+com\automationpractice\qa\pages\PaymentPage.class
+com\automationpractice\qa\extentreport\ExtentReporter.class
+com\automationpractice\qa\pages\AccountRegistrationPage.class
+com\automationpractice\qa\pages\OrderConfirmationPage.class
+com\automationpractice\qa\base\TestBase.class
+com\automationpractice\qa\pages\OrderHistoryPage.class
+com\automationpractice\qa\pages\ShippingPage.class
+com\automationpractice\qa\pages\UserAccountPage.class
+com\automationpractice\qa\pages\ShoppingCartPage.class
+com\automationpractice\qa\util\WebEventListener.class
+com\automationpractice\qa\util\TestUtil.class

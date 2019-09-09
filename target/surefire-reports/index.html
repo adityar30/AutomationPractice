@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-com.automationpractice.qa.testcases.Testcases">
+              <span class="suite-name border-failed">com.automationpractice.qa.testcases.Testcases</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-com.automationpractice.qa.testcases.Testcases">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-com.automationpractice.qa.testcases.Testcases">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-com.automationpractice.qa.testcases.Testcases">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-com.automationpractice.qa.testcases.Testcases">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-com.automationpractice.qa.testcases.Testcases">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-com.automationpractice.qa.testcases.Testcases">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-com.automationpractice.qa.testcases.Testcases">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-com.automationpractice.qa.testcases.Testcases" class="hide-methods failed suite-com.automationpractice.qa.testcases.Testcases"> (hide)</a> <!-- hide-methods failed suite-com.automationpractice.qa.testcases.Testcases -->
+                      <a href="#" panel-name="suite-com.automationpractice.qa.testcases.Testcases" class="show-methods failed suite-com.automationpractice.qa.testcases.Testcases"> (show)</a> <!-- show-methods failed suite-com.automationpractice.qa.testcases.Testcases -->
+                    </span>
+                    <div class="method-list-content failed suite-com.automationpractice.qa.testcases.Testcases">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.automationpractice.qa.testcases.Testcases" title="com.automationpractice.qa.testcases.Testcases" hash-for-method="AutomationPractice_TC05">AutomationPractice_TC05</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-com.automationpractice.qa.testcases.Testcases -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-com.automationpractice.qa.testcases.Testcases" class="hide-methods passed suite-com.automationpractice.qa.testcases.Testcases"> (hide)</a> <!-- hide-methods passed suite-com.automationpractice.qa.testcases.Testcases -->
+                      <a href="#" panel-name="suite-com.automationpractice.qa.testcases.Testcases" class="show-methods passed suite-com.automationpractice.qa.testcases.Testcases"> (show)</a> <!-- show-methods passed suite-com.automationpractice.qa.testcases.Testcases -->
+                    </span>
+                    <div class="method-list-content passed suite-com.automationpractice.qa.testcases.Testcases">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.automationpractice.qa.testcases.Testcases" title="com.automationpractice.qa.testcases.Testcases" hash-for-method="AutomationPractice_TC01(ABCD, CBDE, 25.0, October, 2000.0, ABC Corp., ABCD, Miami, Florida, 33109.0, 1234.0, 3456.0, Tampa, ...)">AutomationPractice_TC01(ABCD, CBDE, 25.0, October, 2000.0, ABC Corp., ABCD, Miami, Florida, 33109.0, 1234.0, 3456.0, Tampa, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.automationpractice.qa.testcases.Testcases" title="com.automationpractice.qa.testcases.Testcases" hash-for-method="AutomationPractice_TC02">AutomationPractice_TC02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.automationpractice.qa.testcases.Testcases" title="com.automationpractice.qa.testcases.Testcases" hash-for-method="AutomationPractice_TC03">AutomationPractice_TC03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.automationpractice.qa.testcases.Testcases" title="com.automationpractice.qa.testcases.Testcases" hash-for-method="AutomationPractice_TC04">AutomationPractice_TC04</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-com.automationpractice.qa.testcases.Testcases -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-com.automationpractice.qa.testcases.Testcases" class="panel com.automationpractice.qa.testcases.Testcases">
+          <div class="suite-com.automationpractice.qa.testcases.Testcases-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.automationpractice.qa.testcases.Testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AutomationPractice_TC05">
+                  </a> <!-- AutomationPractice_TC05 -->
+                  <span class="method-name">AutomationPractice_TC05</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Invalid email address. expected [Invalid email address.] but found [123456]
+	at com.automationpractice.qa.pages.AccountLoginPage.LoginFail(AccountLoginPage.java:95)
+	at com.automationpractice.qa.testcases.Testcases.AutomationPractice_TC05(Testcases.java:115)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-com.automationpractice.qa.testcases.Testcases-class-failed -->
+          <div class="suite-com.automationpractice.qa.testcases.Testcases-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.automationpractice.qa.testcases.Testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AutomationPractice_TC01(ABCD, CBDE, 25.0, October, 2000.0, ABC Corp., ABCD, Miami, Florida, 33109.0, 1234.0, 3456.0, Tampa, ...)">
+                  </a> <!-- AutomationPractice_TC01(ABCD, CBDE, 25.0, October, 2000.0, ABC Corp., ABCD, Miami, Florida, 33109.0, 1234.0, 3456.0, Tampa, ...) -->
+                  <span class="method-name">AutomationPractice_TC01</span>
+                  <span class="parameters">(ABCD, CBDE, 25.0, October, 2000.0, ABC Corp., ABCD, Miami, Florida, 33109.0, 1234.0, 3456.0, Tampa, Florida)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AutomationPractice_TC02">
+                  </a> <!-- AutomationPractice_TC02 -->
+                  <span class="method-name">AutomationPractice_TC02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AutomationPractice_TC03">
+                  </a> <!-- AutomationPractice_TC03 -->
+                  <span class="method-name">AutomationPractice_TC03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AutomationPractice_TC04">
+                  </a> <!-- AutomationPractice_TC04 -->
+                  <span class="method-name">AutomationPractice_TC04</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-com.automationpractice.qa.testcases.Testcases-class-passed -->
+        </div> <!-- panel com.automationpractice.qa.testcases.Testcases -->
+        <div panel-name="test-xml-com.automationpractice.qa.testcases.Testcases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;com.automationpractice.qa.testcases.Testcases&quot;&gt;
+  &lt;test name=&quot;Command line test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.automationpractice.qa.testcases.Testcases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- com.automationpractice.qa.testcases.Testcases --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-com.automationpractice.qa.testcases.Testcases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for com.automationpractice.qa.testcases.Testcases</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-com.automationpractice.qa.testcases.Testcases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for com.automationpractice.qa.testcases.Testcases</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-com.automationpractice.qa.testcases.Testcases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for com.automationpractice.qa.testcases.Testcases</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_com.automationpractice.qa.testcases.Testcases');
+function tableData_com.automationpractice.qa.testcases.Testcases() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'AutomationPractice_TC01')
+data.setCell(0, 2, 'com.automationpractice.qa.testcases.Testcases')
+data.setCell(0, 3, 57335);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'AutomationPractice_TC03')
+data.setCell(1, 2, 'com.automationpractice.qa.testcases.Testcases')
+data.setCell(1, 3, 25487);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'AutomationPractice_TC04')
+data.setCell(2, 2, 'com.automationpractice.qa.testcases.Testcases')
+data.setCell(2, 3, 4830);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'AutomationPractice_TC02')
+data.setCell(3, 2, 'com.automationpractice.qa.testcases.Testcases')
+data.setCell(3, 3, 3257);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'AutomationPractice_TC05')
+data.setCell(4, 2, 'com.automationpractice.qa.testcases.Testcases')
+data.setCell(4, 3, 1008);
+window.suiteTableData['com.automationpractice.qa.testcases.Testcases']= { tableData: data, tableDiv: 'times-div-com.automationpractice.qa.testcases.Testcases'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-com.automationpractice.qa.testcases.Testcases">
+              </div> <!-- times-div-com.automationpractice.qa.testcases.Testcases -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-com.automationpractice.qa.testcases.Testcases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for com.automationpractice.qa.testcases.Testcases</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-com.automationpractice.qa.testcases.Testcases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-com.automationpractice.qa.testcases.Testcases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automationpractice.qa.testcases.Testcases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">AutomationPractice_TC01(ABCD, CBDE, 25.0, October, 2000.0, ABC Corp., ABCD, Miami, Florida, 33109.0, 1234.0, 3456.0, Tampa, ...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AutomationPractice_TC02</span>
+                <span class="method-start">57338 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AutomationPractice_TC03</span>
+                <span class="method-start">60596 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AutomationPractice_TC04</span>
+                <span class="method-start">86084 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AutomationPractice_TC05</span>
+                <span class="method-start">90915 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">92713 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

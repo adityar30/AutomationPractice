@@ -114,9 +114,11 @@ public class TestBase {
 		boolean bool=true; 
 		try {
 		
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Please enter the Website URL");
-		UserUrl = sc.nextLine().trim().toLowerCase();
+		
+		
+		UserUrl = prop.getProperty("url").trim().toLowerCase();
+		
+		
 		if( UserUrl!= null) {
 			new URL(UserUrl).toURI();
 			

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [com.automationpractice.qa.testcases.Testcases]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.automationpractice.qa.testcases.Testcases">
+        <methods>
+          <include name="tearDown"/>
+          <include name="AutomationPractice_TC05"/>
+          <include name="AutomationPractice_TC01"/>
+        </methods>
+      </class> <!-- com.automationpractice.qa.testcases.Testcases -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [com.automationpractice.qa.testcases.Testcases] -->
