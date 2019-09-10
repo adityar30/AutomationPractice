@@ -13,7 +13,7 @@ public class OrderHistoryPage extends TestBase{
 	
 	static Logger log = Logger.getLogger(OrderHistoryPage.class);
 
-	@FindBy(xpath="//*[@id=\"order-list\"]/tbody/tr/td[6]/a")
+	@FindBy(xpath="//*[@id='order-list']/tbody/tr/td[6]/a")
 	WebElement InvoicePDFLink;
 	
 	@FindBy(xpath="//*[@id='header']/div[2]/div/div/nav/div[2]/a")
@@ -32,12 +32,12 @@ public class OrderHistoryPage extends TestBase{
 		log.info("Page Title: "+driver.getTitle());
 		log.info("Clicking on Invoice link");
 		InvoicePDFLink.click();
-		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(12000, TimeUnit.SECONDS);
 		log.info("Getting List of Tabs");
 		ArrayList<String> tab= new ArrayList<String> (driver.getWindowHandles());
 		log.info("Switching to Child Tab");
 		driver.switchTo().window(tab.get(1));
-		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(12000, TimeUnit.SECONDS);
 		log.info("Closing Child Tab");
 	    driver.close();
 	    log.info("Switching back to Parent Tab");
@@ -53,7 +53,7 @@ public class OrderHistoryPage extends TestBase{
 
 	public void VerifyDownload() {
 		try {
-			driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(7000, TimeUnit.SECONDS);
 			File file = new File(downloadPath);
 			if (file.exists()) {
 			    

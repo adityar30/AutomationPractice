@@ -32,12 +32,14 @@ import org.testng.Assert;
 public class TestBase {
 
 	public static Properties prop;
+	public Properties urlprop;
 	public static WebDriver driver;
 	static String UserUrl;
 	static Logger log = Logger.getLogger(TestBase.class);
 	public static EventFiringWebDriver eventdriver;
 	public static EventHandler handler;
 	String downloadPath=System.getProperty("user.dir")+"\\Download";
+
 	
 	public TestBase() {
 		try {
@@ -109,26 +111,26 @@ public class TestBase {
 	
 	}
 	
-	public static boolean ValidateURL() {
+	public boolean ValidateURL() {
 		
 		boolean bool=true; 
 		try {
-		
-		
-		
-		UserUrl = prop.getProperty("url").trim().toLowerCase();
+			urlprop = new Properties();
+			urlprop.load(this.getClass().getClassLoader().getResourceAsStream("maven.properties"));
+			UserUrl=urlprop.getProperty("url").trim().toLowerCase();
+			log.info("Entered URL by user: "+UserUrl);
 		
 		
 		if( UserUrl!= null) {
 			new URL(UserUrl).toURI();
 			
-			log.info("Entered URL is Valid");
+			log.info("Entered URL is Valid: " +UserUrl);
 			bool=true;
 			
 		}
 		}catch(Exception e)
 		{
-			log.error("Entered URL is Invalid");
+			log.error("Entered URL is Invalid: "+UserUrl);
 			Assert.assertTrue(false);
 			bool = false;
 			}
